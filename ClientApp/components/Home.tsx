@@ -2,6 +2,7 @@ import * as React from 'react';
 
 export class Home extends React.Component<{}, {}> {
     public render() {
+        console.log('abc');
         return <div>
             <h1>Hello, world! hvvvahahdddahaahah</h1>
             <p>Welcome to your new single-page application, built with:</p>
