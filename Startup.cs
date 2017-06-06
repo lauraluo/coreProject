@@ -43,6 +43,9 @@ namespace WebApplicationBasic
                 app.UseDeveloperExceptionPage();
                 app.UseWebpackDevMiddleware(new WebpackDevMiddlewareOptions {
                     HotModuleReplacement = true,
+                    HotModuleReplacementClientOptions = new Dictionary<string, string> { 
+                        { "reload", "false" }
+                    },
                     ReactHotModuleReplacement = true
                 });
             }
